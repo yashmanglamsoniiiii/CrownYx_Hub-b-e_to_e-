@@ -1,0 +1,18 @@
+<!-- Floating Chatbot Icon -->
+<div id="chat-launcher" style="position: fixed; bottom: 30px; right: 30px; z-index: 9999;">
+  <button onclick="openChat()" style="background: linear-gradient(to right, #ff758c, #ff7eb3); border: none; border-radius: 50%; width: 60px; height: 60px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); color: white; font-size: 1.5rem;">
+    💬
+  </button>
+</div>
+
+<!-- Chat Window -->
+<div id="chat-box" style="display:none; position: fixed; bottom: 100px; right: 30px; width: 300px; max-height: 500px; background: white; border-radius: 15px; box-shadow: 0 4px 24px rgba(0,0,0,0.2); overflow: hidden; z-index: 10000;">
+  <iframe src="YOUR_AI_ASSISTANT_URL_HERE" style="width:100%; height:100%; border:none;"></iframe>
+</div>
+
+<script>
+  function openChat() {
+    var box = document.getElementById("chat-box");
+    box.style.display = box.style.display === "none" ? "block" : "none";
+  }
+</script>
