@@ -19,6 +19,9 @@
             overflow-x: hidden;
         }
 
+           /* MOBILE RESPONSIVENESS ADDED NEW VERSION */
+        img { max-width: 100%; height: auto; }
+
         .doodle-bg {
             position: fixed;
             top: 0;
@@ -39,6 +42,12 @@
             font-family: 'Playfair Display', serif;
             background: linear-gradient(45deg, #ff8a00, #e52e71, #6a0dad, #007cf0, #00dfd8, #ff8a00);
             background-size: 400% 400%;
+
+             /* MOBILE RESPONSIVENESS ADDED NEW VERSION  */
+            .brand-title {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: gradient-animation 10s ease infinite;
@@ -77,29 +86,90 @@
     <div class="doodle-bg"></div>
 
     <header class="sticky top-0 z-50 glassmorphic">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="nav-link">
+
+                                        <!-- ||old navbar code|| -->
+
+                      <!-- OLD VERSION  -->
+        <!-- <nav class="container mx-auto px-6 py-3 flex justify-between items-center"> -->   
+                        <!-- MOBILE RESPONSIVENESS ADDED NEW VERSION  -->
+
+       <!-- <nav class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-3 text-center">
+
+            <a href="index.html" class="nav-link"> -->
+
+                <!-- old -->
                 <!-- <div class="brand-title text-3xl md:text-4xl font-bold">
                     YmGluxeS -->
-                    <div class="brand-title text-3xl md:text-4xl font-bold">
-                    CrownYx
+
+                    <!-- new  -->
+                    <!-- <div class="brand-title text-3xl md:text-4xl font-bold">
+                        CrownYx
                     <span class="block text-xl -mt-2 text-center"> Hub</span>
                 </div>
-            </a>
+            </a> -->
 
             <!-- for festive season  -->
            <!-- diwali offer -->
-            <span style="font-size:20px; font-weight:bold;">🎉Get upto <span class = "underline"><strong>50-70 % off</strong></span> on this Diwali !!! *<span class="underline">(FOR LIMITED TIME)</span>* 💥</span>
-            
-            <div class="flex items-center space-x-4 md:space-x-6">
+                      
+
+                           <!-- OLD VERSION  -->
+            <!-- <span style="font-size:20px; font-weight:bold;">🎉Get upto <span class= "underline"><strong> 50-70 % off </strong></span>on this Diwali !!! *<span class="underline">(FOR LIMITED TIME)</span>* 💥</span> -->
+             
+                             <!-- MOBILE RESPONSIVENESS ADDED NEW VERSION  -->
+            <!-- <span class="text-sm sm:text-base font-semibold block w-full sm:w-auto text-center">
+    🎉Get upto <span class="underline"><strong> 50-70 % off </strong></span> on this Diwali !!!
+    <span class="underline">(FOR LIMITED TIME)</span> 💥
+</span> -->
+                  
+
+            <!-- <div class="flex items-center space-x-4 md:space-x-6"> -->
+
                 <!-- <a href="gemini.website ai incorporated.html" class="nav-icon transition" title="Home"><i data-lucide="home"></i></a> -->
-                 <a href="index.html" class="nav-icon transition" title="Home"><i data-lucide="home"></i></a>
+
+                 <!-- <a href="index.html" class="nav-icon transition" title="Home"><i data-lucide="home"></i></a>
                 <a href="index.html" class="nav-icon transition" title="Cart"><i data-lucide="shopping-cart"></i></a>
                 <a href="index.html" class="nav-icon transition" title="Favorites"><i data-lucide="heart"></i></a>
                 <a href="index.html" class="nav-icon transition" title="Contact"><i data-lucide="mail"></i></a>
                 <a href="index.html" class="nav-icon transition" title="About"><i data-lucide="info"></i></a>
             </div>
-        </nav>
+        </nav> -->
+
+
+                                    <!-- ||new navbar code|| -->
+        <nav class="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center text-center">
+  
+  <!-- Logo -->
+  <a href="index.html" class="nav-link order-1">
+    <div class="brand-title text-3xl sm:text-4xl md:text-4xl font-bold">
+      CrownYx
+      <span class="block text-xl -mt-2 text-center">Hub</span>
+    </div>
+  </a>
+
+  <!-- Offer Text (middle on desktop, below on mobile) -->
+  <span class="text-lg sm:text-xl md:text-2xl font-semibold text-center order-3 md:order-2 mt-3 md:mt-0 leading-snug">
+    🎉 Get upto <span class="underline font-bold">50–70% off</span> on this Diwali !!! 
+    <span class="underline">(FOR LIMITED TIME)</span> 💥
+  </span>
+
+  <!-- Icons -->
+  <div class="flex items-center space-x-4 md:space-x-6 order-2 md:order-3">
+    <a href="index.html" class="nav-icon transition" title="Home"><i data-lucide="home"></i></a>
+    <a href="index.html" class="nav-icon transition" title="Cart"><i data-lucide="shopping-cart"></i></a>
+    <a href="index.html" class="nav-icon transition" title="Favorites"><i data-lucide="heart"></i></a>
+    <a href="index.html" class="nav-icon transition" title="Contact"><i data-lucide="mail"></i></a>
+    <a href="index.html" class="nav-icon transition" title="About"><i data-lucide="info"></i></a>
+  </div>
+</nav>
+
+
+<!-- colourful -->
+<!-- <span class="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-center mt-3 leading-snug text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
+    🎉 Get upto <span class="underline font-bold">50–70% off</span> on this Diwali !!! 
+    <span class="underline">(FOR LIMITED TIME)</span> 💥
+</span> -->
+
+
     </header>
                       <!-- OLD VERSION -->
     <!-- <main class="container mx-auto px-6 py-12">
@@ -145,7 +215,21 @@
         <main class="container mx-auto px-6 py-12">
     <h1 class="text-4xl font-bold brand-title text-center mb-10">Women's Collection</h1>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+    
+                    <!-- OLD VERSION  -->
+    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8"> -->
+        <!-- MOBILE RESPONSIVENESS ADDED NEW VERSION -->
+          <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 px-2 sm:px-0"> -->
+        
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-8 px-2 sm:px-0">
+<!-- | Screen Size         | Old Layout | New Layout  |
+| ------------------- | ---------- | ----------- |
+| Very small (mobile) | 1 per row  | ✅ 2 per row |
+| Tablet (≥640px)     | 2 per row  | 3 per row  if done sm:grid-cols-3 |
+| Laptop (≥1024px)    | 4 per row  | 4 per row   | -->
+
+
+
         <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg">
             <img src="https://images.unsplash.com/photo-1520037303358-d362540b6e92?q=80&w=1887&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x500/d3cce7/333?text=Women\'s+T-shirt';" alt="Women's Oversized Tee" class="w-full h-64 object-cover">
             <div class="p-4">
@@ -212,7 +296,11 @@
     </div>
 </main>
 
-    <footer class="bg-white bg-opacity-30 mt-16 py-8">
+           <!-- OLD VERSION  -->
+    <!-- <footer class="bg-white bg-opacity-30 mt-16 py-8"> -->
+                        <!-- MOBILE RESPONSIVENESS ADDED NEW VERSION  -->
+    <footer class="bg-white bg-opacity-30 mt-12 py-8 text-center px-4">
+
         <div class="container mx-auto px-6 text-center text-gray-800">
             <!-- <h3 class="brand-title text-4xl font-bold">
                 YmGluxeS -->
