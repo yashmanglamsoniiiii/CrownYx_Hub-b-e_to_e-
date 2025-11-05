@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YmGluxeS Hub - Boys</title>
+    <title>CrownYx Hub - Boys</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,9 @@
             position: relative;
             overflow-x: hidden;
         }
+
+            /* MOBILE RESPONSIVENESS ADDED NEW VERSION */
+        img { max-width: 100%; height: auto; }
 
         .doodle-bg {
             position: fixed;
@@ -38,6 +41,12 @@
             font-family: 'Playfair Display', serif;
             background: linear-gradient(45deg, #ff8a00, #e52e71, #6a0dad, #007cf0, #00dfd8, #ff8a00);
             background-size: 400% 400%;
+
+             /* MOBILE RESPONSIVENESS ADDED NEW VERSION  */
+            .brand-title {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: gradient-animation 10s ease infinite;
@@ -76,7 +85,12 @@
     <div class="doodle-bg"></div>
 
     <header class="sticky top-0 z-50 glassmorphic">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+
+                      <!-- OLD VERSION  -->
+        <!-- <nav class="container mx-auto px-6 py-3 flex justify-between items-center"> -->   
+                        <!-- MOBILE RESPONSIVENESS ADDED NEW VERSION  -->
+       <nav class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-3 text-center">
+
             <a href="index.html" class="nav-link">
                 <!-- <div class="brand-title text-3xl md:text-4xl font-bold">
                     YmGluxeS -->
@@ -88,7 +102,16 @@
 
             <!-- for festive season  -->
            <!-- diwali offer -->
-            <span style="font-size:20px; font-weight:bold;">🎉Get upto <span class = "underline"><strong>50-70 % off</strong> </span>on this Diwali !!! *<span class="underline">(FOR LIMITED TIME)</span>* 💥</span>
+                      
+
+                           <!-- OLD VERSION  -->
+            <!-- <span style="font-size:20px; font-weight:bold;">🎉Get upto <span class= "underline"><strong> 50-70 % off </strong></span>on this Diwali !!! *<span class="underline">(FOR LIMITED TIME)</span>* 💥</span> -->
+                             <!-- MOBILE RESPONSIVENESS ADDED NEW VERSION  -->
+            <span class="text-sm sm:text-base font-semibold block w-full sm:w-auto text-center">
+    🎉Get upto <span class="underline"><strong> 50-70 % off </strong></span> on this Diwali !!!
+    <span class="underline">(FOR LIMITED TIME)</span> 💥
+</span>
+                  
 
             <div class="flex items-center space-x-4 md:space-x-6">
                 <!-- <a href="gemini.website ai incorporated.html" class="nav-icon transition" title="Home"><i data-lucide="home"></i></a> -->
@@ -147,7 +170,16 @@
 
 
        <!-- FIFTEENTH  ROW OF 4 BOXES -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+    
+                    <!-- OLD VERSION  -->
+    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8"> -->
+        <!-- MOBILE RESPONSIVENESS ADDED NEW VERSION -->
+         <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 px-2 sm:px-0"> -->
+        
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 px-2 sm:px-0">
+
+
+
 
         <!-- BOX 51 -->
         <div class="product-card bg-white bg-opacity-40 backdrop-blur-md rounded-lg overflow-hidden shadow-lg">
@@ -1392,7 +1424,11 @@
     </div>
 </main>
 
-    <footer class="bg-white bg-opacity-30 mt-16 py-8">
+            <!-- OLD VERSION  -->
+    <!-- <footer class="bg-white bg-opacity-30 mt-16 py-8"> -->
+                        <!-- MOBILE RESPONSIVENESS ADDED NEW VERSION  -->
+    <footer class="bg-white bg-opacity-30 mt-12 py-8 text-center px-4">
+
         <div class="container mx-auto px-6 text-center text-gray-800">
             <!-- <h3 class="brand-title text-4xl font-bold">
                 YmGluxeS -->

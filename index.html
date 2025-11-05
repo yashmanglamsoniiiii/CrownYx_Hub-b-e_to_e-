@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YmGluxeS Hub - Luxury meets Streets</title>
+    <!-- <title>YmGluxeS Hub - Luxury meets Streets</title> -->
+     <title>Crownyx Hub - Luxury meets comfort</title>
+  <meta name="description" content="Explore Crownyx Hub – where style, comfort, and technology meet seamlessly.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+
+       <!-- mobile responsiveness added new version -->
+     <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+
 
     <style>
         body {
@@ -82,6 +93,10 @@
         }
 
         .product-card {
+            /* mobile responsiveness added new version */
+        border-radius: 14px;
+        overflow: hidden;
+
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -162,6 +177,20 @@ body.dark-theme .nav-icon:hover {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        /* MOBILE RESPONSIVENESS ADDED NEW VERSION */
+        @media (max-width: 640px) {
+  .brand-title { font-size: 1.8rem !important; }
+  header nav { padding: 0.5rem 1rem !important; }
+  .nav-icon i { width: 20px; height: 20px; }
+}
+footer p {
+  font-size: 0.95rem;
+}
+footer h3 {
+  font-size: 2.5rem;
+}
+
+
     </style>
 </head>
 <body>
@@ -231,11 +260,19 @@ body.dark-theme .nav-icon:hover {
                 <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=2070&auto=format&fit=crop" 
                     onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/ffe4e6/333?text=YmGluxeS+Hub';" 
                     alt="Fashion models posing" class="absolute top-0 left-0 w-full h-full object-cover object-center">
-                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30"></div>
+
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>  
+                <!-- opacity from 30 to 50  -->
+                 
                 <div class="relative z-10 glassmorphic rounded-2xl p-8 md:p-12 text-center">
                     <!-- <h1 class="brand-title text-5xl md:text-7xl font-bold leading-tight">
                         YmGluxeS -->
-                        <h1 class="brand-title text-5xl md:text-7xl font-bold leading-tight">
+
+                                <!-- old version  -->
+                        <!-- <h1 class="brand-title text-5xl md:text-7xl font-bold leading-tight"> -->
+                            <!-- mobile RESPONSIVENESS ADDED NEW VERSION -->
+                            <h1 class="brand-title text-3xl sm:text-5xl md:text-7xl font-bold leading-tight">
+
                         CrownYx
                         <span class="block text-4xl -mt-2">Hub</span>
                     </h1>
@@ -247,8 +284,8 @@ body.dark-theme .nav-icon:hover {
 
             <!-- insert this right after </nav> and before </header>  for girls section--> 
          <!-- diwali promo bar -->
-<div id="promoBar" class="w-full mt-2 glassmorphic bg-gradient-to-r from-pink-400 to-orange-300 bg-opacity-85 text-white py-6 px-8 flex items-center justify-center gap-4 text-sm md:text-base transition-transform duration-300" role="region" aria-label="Diwali offer">
-
+<div id="promoBar" class="w-full mt-2 glassmorphic bg-gradient-to-r from-pink-400 to-orange-300 bg-opacity-85 text-white py-3 px-4 flex items-center justify-center gap-4 text-sm md:text-base transition-transform duration-300" role="region" aria-label="Diwali offer">
+ <!-- PY-6 PX-8 CHANGED TO class="py-3 px-4" -->
 
     <!-- for festive season  -->
            <!-- diwali offer -->
@@ -308,7 +345,12 @@ body.dark-theme .nav-icon:hover {
 
             <!-- UPDATED CATEGORY BARS  -->
             <div class="container mx-auto px-6 py-8">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+
+                <!-- OLD VERSION  -->
+    <!-- <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"> -->
+        <!-- MOBILE RESPONSIVENESS ADDED NEW VERSION -->
+         <div class="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-6 text-center">
+
         <a href="mens_section.html" class="category-bar glassmorphic p-4 rounded-lg cursor-pointer">
             <h3 class="text-xl font-semibold">Men</h3>
         </a>
@@ -332,7 +374,7 @@ body.dark-theme .nav-icon:hover {
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Product Card 1 -->
                     <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1529391409740-59f2dea50586?q=80&w=1887&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x500/FFF1F2/333?text=Oversized+Tee';" alt="Oversized T-shirt" class="w-full h-64 object-cover">
+                        <img src="https://images.unsplash.com/photo-1529391409740-59f2dea50586?q=80&w=1887&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x500/FFF1F2/333?text=Oversized+Tee';" alt="Oversized T-shirt" class="w-full h-64 object-cover  rounded-t-lg">
                         <div class="p-4">
                             <h4 class="text-lg font-semibold">Oversized Graphic Tee</h4>
                             <p class="text-gray-600">Rs. 1,299</p>
@@ -341,7 +383,7 @@ body.dark-theme .nav-icon:hover {
                     </div>
                     <!-- Product Card 2 -->
                     <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1604176354204-926873782855?q=80&w=1887&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x500/FFE4E6/333?text=Baggy+Jeans';" alt="Baggy Jeans" class="w-full h-64 object-cover">
+                        <img src="https://images.unsplash.com/photo-1604176354204-926873782855?q=80&w=1887&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x500/FFE4E6/333?text=Baggy+Jeans';" alt="Baggy Jeans" class="w-full h-64 object-cover rounded-t-lg>
                         <div class="p-4">
                             <h4 class="text-lg font-semibold">Distressed Baggy Jeans</h4>
                             <p class="text-gray-600">Rs. 2,499</p>
@@ -350,7 +392,7 @@ body.dark-theme .nav-icon:hover {
                     </div>
                     <!-- Product Card 3 -->
                     <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1887&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x500/FFDAB9/333?text=Cargo+Pants';" alt="Cargo Pants" class="w-full h-64 object-cover">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1887&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x500/FFDAB9/333?text=Cargo+Pants';" alt="Cargo Pants" class="w-full h-64 object-cover rounded-t-lg">
                         <div class="p-4">
                             <h4 class="text-lg font-semibold">Utility Cargo Pants</h4>
                             <p class="text-gray-600">Rs. 2,199</p>
@@ -359,7 +401,7 @@ body.dark-theme .nav-icon:hover {
                     </div>
                     <!-- Product Card 4 -->
                     <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1622560481017-8274b3343460?q=80&w=1887&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x500/FFFACD/333?text=Loose-fit+Jeans';" alt="Loose-fit Jeans" class="w-full h-64 object-cover">
+                        <img src="https://images.unsplash.com/photo-1622560481017-8274b3343460?q=80&w=1887&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x500/FFFACD/333?text=Loose-fit+Jeans';" alt="Loose-fit Jeans" class="w-full h-64 object-cover rounded-t-lg">
                         <div class="p-4">
                             <h4 class="text-lg font-semibold">90's Loose-fit Jeans</h4>
                             <p class="text-gray-600">Rs. 2,799</p>
